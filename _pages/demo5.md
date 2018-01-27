@@ -1,7 +1,7 @@
 ---
 layout: page
 type: sub-section
-order: 1 
+order: 5
 title: Stability
 image: /hysteresis.png
 ---
