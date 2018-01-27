@@ -2,7 +2,7 @@
 layout: page
 type: section
 order: 1 
-title: Jonny edit
+title: Stability
 image: /images/demo.jpg
 ---
 
