@@ -2,7 +2,7 @@
 layout: page
 type: section
 order: 1 
-title: Demo Page
+title: Jonny edit
 image: /images/demo.jpg
 ---
 
