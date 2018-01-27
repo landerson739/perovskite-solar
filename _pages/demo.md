@@ -3,7 +3,7 @@ layout: page
 type: section
 order: 1 
 title: Stability
-image: /images/demo.jpg
+image: /hysteresis.png
 ---
 
 # Testing out the format
