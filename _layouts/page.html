@@ -99,7 +99,7 @@ layout: default
   <!-- Sub-Section Navigation -->
   <div class="sub-navigation">
   {% if subprevious.url %}
-    <a class="prev" href="{{ site.baseurl }}/{{ subprevious.url }}">&laquo; {{ subpreviousName }}</a>
+    <a class="prev" href="{{ site.baseurl }}{{ subprevious.url }}">&laquo; {{ subpreviousName }}</a>
 
     {% if subnext.url %}
         <a class="next" href="{{ site.baseurl }}{{ subnext.url }}">{{ subnextName }} &raquo;</a>
