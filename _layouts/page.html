@@ -14,15 +14,50 @@ layout: default
 
 
 
+<!-- Generate Sub-Section Navigation -->
+{% assign parent = site.pages | where:"type","section" | where:"title",page.title | first%}
+{% assign subsections = site.pages | where:"type","sub-section" | where:"title",page.title | sort:"order" %}
 
+<!-- Find Index of Current Sub-Section -->
+{% assign subsectionsSize = subsections | size %}
+{% if page.type == "sub-section" %}
+  {% for subsection in subsections %}
+    {% if subsection.title == page.title and subsection.sub-title == page.sub-title and subsection.order == page.order %}
+      {% assign subPageNo = forloop.index %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% assign subPageNo = 0 %}
+{% endif %}
+
+<!-- Get Previous Section If Exists -->
+{% if page.type == "sub-section" %}
+  {% if subPageNo > 1 %}
+    {% assign subPrevNo  = subpageNo | minus:2 %}
+    {% assign subprevious = subsections[subPrevNo] %}
+  {% else %}
+    {% assign subprevious = parent %}
+  {% endif %}
+{% endif %}
+
+<! -- Get Next Section If Exists -->
+{% if subPageNo < subsectionsSize %}
+  {% assign subNextNo = subPageNo | plus:0 %}  
+  {% assign subnext = subsections[subNextNo] %}
+{% endif %}
+
+<!-- Generates Page Navigation -->
 {% assign sections = site.pages | where:"type","section" | sort:"order" %}
+
+<!-- Find Index Of Current Section -->
 {% assign sectionsSize = sections | size %}
 {% for section in sections %}
-  {% if section.title == page.title and section.order == page.order %}
+  {% if section.title == parent.title and section.order == parent.order %}
     {% assign pageNo = forloop.index %}
   {% endif %}
 {% endfor %}
 
+<!-- Get Previous Section If Exist -->
 {% if pageNo > 1 %}
   {% assign prevNo = pageNo | minus:2 %}
   {% assign prevPage = sections[prevNo] %}
@@ -32,6 +67,7 @@ layout: default
   {% endif %}
 {% endif %}
 
+<!-- Get Next Section If Exists -->
 {% if pageNo < sectionsSize %}
   {% assign nextNo = pageNo | plus:0 %}
   {% assign nextPage = sections[nextNo] %}
@@ -43,6 +79,35 @@ layout: default
 
 
 <div class="page-navigation">
+  <!-- Parse Sub-Section Previous Name -->
+  {% if subprevious.sub-title %}
+    {% assign subpreviousName = subprevious.title | append:": " | append:subprevious.sub-title %}
+  {% else %}
+    {% assign subpreviousName = subprevious.title %}
+  {% endif %}
+
+  <!-- Parse Sub-Section Next Name -->
+  {% if subnext.sub-title %}
+    {% assign subnextName = subnext.title | append:": " | append:subnext.sub-title %}
+  {% else %}
+    {% assign subnextName = subnext.title %}
+  {% endif %}
+
+  <!-- Sub-Section Navigation -->
+  <div class="sub-navigation">
+  {% if subprevious.url %}
+    <a class="prev" href="{{ site.baseurl }}/{{ subprevious.url }}">&laquo; {{ subpreviousName }}</a>
+
+    {% if subnext.url %}
+        <a class="next" href="{{ site.baseurl }}{{ subnext.url }}">{{ subnextName }} &raquo;</a>
+    {% endif %}
+  {% elsif subnext.url %}
+    <a class="next" style="width: 100%" href="{{ site.baseurl }}{{ subnext.url }}">{{ subnextName }} &raquo;</a>
+  {% endif %}
+  </div>
+    
+  <!-- Section Navigation -->
+  <div class="section-navigation">
   {% if previous.url %}
     <a class="prev" href="{{ site.baseurl }}/{{ previous.url }}">&laquo; {{previous.title}}</a>
     
@@ -52,4 +117,5 @@ layout: default
   {% elsif next.url %}
     <a class="next" style="width:100%" href="{{ site.baseurl }}/{{ next.url }}">{{ next.title }} &raquo;</a>  
   {% endif %}
+  </div>
 </div>

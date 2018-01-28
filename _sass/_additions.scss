@@ -44,3 +44,14 @@ div.page img {
   text-align: right;
 }
 
+.sub-navigation {
+  overflow: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.section-navigation {
+  overflow: auto;
+}
+.section-navigation a {
+  font-weight: bold;
+}
