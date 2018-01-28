@@ -5,7 +5,11 @@ layout: default
 <article class="page">
   <a href="{{ site.baseurl }}/">&#8592 Home</a>
 
-  <h1>{{ page.title }}</h1>
+  {% if page.sub-title %}
+    <h1>{{ page.title }}: {{ page.sub-title }}</h1>
+  {% else %}
+    <h1>{{ page.title }}</h1>
+  {% endif %}
 
   <div class="entry">
     {{ content }}
@@ -40,13 +44,12 @@ layout: default
   {% endif %}
 {% endif %}
 
-<! -- Get Next Section If Exists -->
+<!-- Get Next Section If Exists -->
 {% if subPageNo < subsectionsSize %}
   {% assign subNextNo = subPageNo | plus:0 %}  
   {% assign subnext = subsections[subNextNo] %}
 {% endif %}
 
-<!-- Generates Page Navigation -->
 {% assign sections = site.pages | where:"type","section" | sort:"order" %}
 
 <!-- Find Index Of Current Section -->
