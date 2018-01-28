@@ -1,8 +1,8 @@
 ---
 layout: page
 type: section
-order: 4 
-title: Demo Page 4
+order: 2
+title: Theoretical Limits
 image: /images/demo.jpg
 ---
 

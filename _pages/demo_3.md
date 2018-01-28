@@ -1,7 +1,7 @@
 ---
 layout: page
 type: section
-order: 3 
+order: 15 
 title: Demo Page 3
 image: /images/solar-panel.jpg
 ---
