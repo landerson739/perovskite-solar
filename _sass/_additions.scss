@@ -49,9 +49,12 @@ div.page img {
   border-bottom: 1px solid #eee;
 }
 
+.sub-navigation a {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .section-navigation {
   overflow: auto;
-}
-.section-navigation a {
-  font-weight: bold;
+  font-size: 12px;
 }
