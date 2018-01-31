@@ -16,6 +16,6 @@ The efficiency of any electrical device is defined by the ratio between the usef
 
 For example, a lightbulb is designed to emit light by consuming electrical power.
 
-![Lightbulb](/images/demo.jpg)
+![Lightbulb](../../images/demo.jpg)
 
 Incandescent lightbulbs are considered to be inefficient devices as they produce very little light for the amount of power they consume. A lot of the power consumed is wasted a heat.
