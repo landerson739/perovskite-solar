@@ -8,14 +8,13 @@ image: /images/demo.jpg
 
 ## What is Efficiency?
 
-The efficiency of any electrical device is defined by the ratio between the useful work produced by the total energy consumed. 
+The efficiency of any electrical device is defined by the ratio between the useful work produced by the total energy consumed. Efficiency is often denoted by the symbol η.
 
-![Basic Efficiency Eqaution](https://latex.codecogs.com/gif.latex?Efficency&space;=\frac{Useful\&space;Work\&space;Produced}{Total\&space;Energy\&space;Consumed})
-
-
+![Mathematical Efficiency Equation](https://latex.codecogs.com/gif.latex?\eta&space;=\frac{W_{out}}{W_{in}}&space;\quad\quad&space;\eta&space;<&space;1)
 
 For example, a lightbulb is designed to emit light by consuming electrical power.
 
-![Lightbulb](/images/demo.jpg)
+![Lightbulb](/images/demo.jpg =200x)
 
 Incandescent lightbulbs are considered to be inefficient devices as they produce very little light for the amount of power they consume. A lot of the power consumed is wasted a heat.
+
