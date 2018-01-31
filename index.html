@@ -8,13 +8,18 @@ layout: default
 </div>
 
 <div class="pages">
+  <h4 id="find-out-more">Find Out More</h4>
+  <p>
+    Find out more about solar cells and the emerging material that is Perovskite below.
+  </p>
+
   {% assign sections = site.pages | where:"type","section" | sort:"order" %}
   {% for page in sections %}
     <div class="page">
       <a href="{{ site.baseurl }}{{ page.url }}">
-        <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" />
+        <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" /> 
+        <div class="desc">{{ page.title }}</div>
       </a>
-      <div class="desc">{{ page.title }}</div>
     </div>
   {% endfor %}
 </div>

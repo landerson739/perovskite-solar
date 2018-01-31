@@ -14,9 +14,6 @@ Despite poltical challenges with renewables, solar energy's technological challe
 
 Perovksite is one such material showing the poetential to be the next-generation solar cell material. The recently reserached material has shown the fastest progress in the last 10 years and is currently challenging silicon as the material of choice for manufacturers. 
 
-#### Find Out More
-
-Find out more about solar cells and the emerging material that is Perovskite below.
 
 
  

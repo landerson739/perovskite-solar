@@ -18,12 +18,29 @@ div.page {
   height: auto;
   margin: 5px;
   margin-bottom: 15px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+div.page a {
+  font-weight: bold;  
+  color: #333;
+}
+
+div.page a:hover, div.page a:active {
+  color: #4183C4;
 }
 
 div.page img {
   width : 100%;
   height: 120px;
 }
+
+div.page .desc {
+  padding-top: 10px;
+}
+
 
 /* Page Layout Additions */
 .page-navigation {
