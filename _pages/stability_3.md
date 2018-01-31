@@ -1,12 +1,11 @@
 ---
 layout: page
 type: sub-section
-order: 2
+order: 3
 title: Stability
-sub-title:
+sub-title: 
 image: /images/hysteresis.png
 ---
 
-## Atmospheric Stresses
-##### Oxygen
-##### Water
+## UV Degeneration
+##### This Is A Sub-Heading
