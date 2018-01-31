@@ -1,7 +1,7 @@
 ---
 layout: page
 type: sub-section
-order: 5
+order: 3
 title: Stability
 sub-title: Atmospheric Stresses
 image: /images/hysteresis.png
