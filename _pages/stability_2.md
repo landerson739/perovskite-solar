@@ -3,10 +3,10 @@ layout: page
 type: sub-section
 order: 2
 title: Stability
-sub-title: Atmospheric Stresses
+sub-title:
 image: /images/hysteresis.png
 ---
 
-# Atmospheric Stresses
+## Atmospheric Stresses
 ##### Oxygen
 ##### Water

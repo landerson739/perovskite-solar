@@ -3,9 +3,9 @@ layout: page
 type: sub-section
 order: 3
 title: Stability
-sub-title: UV Degeneration
+sub-title: 
 image: /images/hysteresis.png
 ---
 
-# UV Degeneration
+## UV Degeneration
 ##### This Is A Sub-Heading
