@@ -6,6 +6,8 @@ title: Introduction
 permalink: /introduction/
 ---
 
+{{ glossary }}
+
 ## Introduction
 
 The need for renewable energy is a realisation of this centuries society as pressure mounts from the threat of climate change, the poetential for an energy shortage crisis and the decentalization of the power grid. One technology that will play a role in the transition to a more renewable regime of power generation will be solar energy. 

@@ -16,8 +16,6 @@ layout: default
   </div>
 </article>
 
-
-
 <!-- Generate Sub-Section Navigation -->
 {% assign parent = site.pages | where:"type","section" | where:"title",page.title | first%}
 {% assign subsections = site.pages | where:"type","sub-section" | where:"title",page.title | sort:"order" %}
