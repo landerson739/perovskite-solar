@@ -16,6 +16,8 @@ The current produced by a solar cell when illuminated by light is known as the p
 
 Since the photocurrent depends on the incident light, to establish a relation between the two quantities we can consider the quantum efficiency of the solar cell.
 
+Photons that hit the solar cell have an energy E. The photons have a probability of being absorbed an releasing one electron from the solar cell into the external circuit. This probability is the quantum efficiency QE(E)
+
 
 
 
