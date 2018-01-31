@@ -3,7 +3,21 @@ layout: page
 type: sub-section
 order: 1
 title: Theoretical Limits
-sub-title: Photocurrent and Dark Current
+sub-title: Photocurrent
 ---
 
-This is the final demo page.
+## Measuring Photocurrent
+
+The current produced by a solar cell when illuminated by light is known as the photocurrent of a solar cell. It is measured when the solar cell is short-circuited and not connected to a load, as shown below.
+
+![Solar Circuit](https://i.ytimg.com/vi/UELxL1Dmd_k/maxresdefault.jpg)
+
+## Quantum Efficiency
+
+Since the photocurrent depends on the incident light, to establish a relation between the two quantities we can consider the quantum efficiency of the solar cell.
+
+Photons that hit the solar cell have an energy E. The photons have a probability of being absorbed an releasing one electron from the solar cell into the external circuit. This probability is the quantum efficiency QE(E)
+
+
+
+
