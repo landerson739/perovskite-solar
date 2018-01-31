@@ -3,7 +3,7 @@ layout: page
 type: section
 order: 1 
 title: Stability
-image: /hysteresis.png
+image: /images/hysteresis.png
 ---
 
 ((very rough first draft))

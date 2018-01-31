@@ -4,7 +4,7 @@ type: sub-section
 order: 42 
 title: Stability
 sub-title: Subsection 2
-image: /hysteresis.png
+image: /images/hysteresis.png
 ---
 
 # Testing out the format
