@@ -1,7 +1,7 @@
 ---
 layout: page
 type: sub-section
-order: 2
+order: 1
 title: Stability
 sub-title: Electrical Instability
 image: /images/hysteresis.png
