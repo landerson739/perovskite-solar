@@ -7,3 +7,4 @@ image: /images/solar-panel.jpg
 ---
 
 This is the third demo page!
+Trying to edit
