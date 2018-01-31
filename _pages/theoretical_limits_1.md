@@ -3,7 +3,8 @@ layout: page
 type: sub-section
 order: 1
 title: Theoretical Limits
-sub-title: Photocurrent and Dark Current
+sub-title: Photocurrent
 ---
 
-This is the final demo page.
+
+

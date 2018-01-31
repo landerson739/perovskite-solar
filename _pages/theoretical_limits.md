@@ -27,9 +27,7 @@ Electrical devices, such as a lighbulb, power consumption can be calculated.
 
 ## Efficiency of Solar Cells
 
-Despite solar cells producing power, they still have an efficiency associated with their operation. The efficiency of a solar cell is the power it can produce from the incident light hitting the cell.
+Despite solar cells producing power, they still have an efficiency associated with their operation. The basic efficiency of a solar cell is the power it can produce from the incident light hitting the cell.
 
-
-
-
+In comparison to a simple device, the efficiency of photovoltaic cells depend on several different factors.
 
